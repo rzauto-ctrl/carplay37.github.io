@@ -3,317 +3,231 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CARPLAY 37 | L'Élite de l'Intégration Automobile</title>
     
-    <!-- SEO Invisible (Référencement local massif) -->
-    <meta name="description" content="Expertise luxe en installation CarPlay et Android Auto à Tours. Modernisation de cockpit pour BMW, Mercedes, Audi et Porsche. Intervention premium à domicile.">
+    <!-- SEO & Référencement -->
+    <title>CARPLAY 37 | Installation Apple CarPlay & Android Auto à domicile - Tours</title>
+    <meta name="description" content="Modernisez votre voiture avec Apple CarPlay et Android Auto sans fil à Tours et partout en France. Installation professionnelle à domicile, garantie 2 ans.">
+    <meta name="keywords" content="CarPlay Tours, Android Auto Tours, Installation CarPlay domicile, CarPlay BMW Tours, CarPlay Audi Tours, CarPlay Mercedes Tours, 37000">
     
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "AutoRepair",
-      "name": "CARPLAY 37",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Tours",
-        "addressRegion": "Indre-et-Loire",
-        "postalCode": "37000",
-        "addressCountry": "FR"
-      },
-      "areaServed": [
-        "Tours", "Joué-lès-Tours", "Saint-Cyr-sur-Loire", "Saint-Pierre-des-Corps", 
-        "Saint-Avertin", "Chambray-lès-Tours", "Fondettes", "La Riche", "Ballan-Miré", 
-        "Montlouis-sur-Loire", "La Ville-aux-Dames", "Mettray", "Luynes", "Berthenay",
-        "Saint-Genouph", "Saint-Roch", "Savonnières", "Villandry", "Druye", 
-        "Notre-Dame-d'Oé", "Chanceaux-sur-Choisille", "Parçay-Meslay"
-      ],
-      "telephone": "+33623436777"
-    }
-    </script>
-
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@400;900&family=Outfit:wght@200;400;700;900&display=swap');
-
-        :root {
-            --accent: #3b82f6;
-            --accent-glow: rgba(59, 130, 246, 0.4);
-            --bg-deep: #020202;
-        }
-
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
         body {
-            font-family: 'Outfit', sans-serif;
-            background-color: var(--bg-deep);
-            color: #fff;
-            overflow-x: hidden;
-            cursor: crosshair;
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .glass-morphism {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0,0,0,0.1);
         }
 
-        .font-unbounded { font-family: 'Unbounded', sans-serif; }
+        .hero-gradient {
+            background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+        }
 
-        /* Effet de grain "Film" pour le luxe */
-        body::before {
-            content: "";
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-float {
             position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: url('https://grainy-gradients.vercel.app/noise.svg');
-            opacity: 0.05;
-            pointer-events: none;
-            z-index: 100;
-        }
-
-        /* Halo lumineux dynamique */
-        .glow-sphere {
-            position: fixed;
-            width: 600px; height: 600px;
-            background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
-            border-radius: 50%;
-            pointer-events: none;
-            z-index: -1;
-            transform: translate(-50%, -50%);
-            transition: transform 0.1s ease-out;
-        }
-
-        /* Navigation Minimaliste */
-        .nav-blur {
-            background: rgba(2, 2, 2, 0.7);
-            backdrop-filter: blur(25px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        /* Hero Text Animation */
-        .text-outline {
-            -webkit-text-stroke: 1px rgba(255,255,255,0.2);
-            color: transparent;
-        }
-
-        /* Card Carbone */
-        .carbon-card {
-            background: linear-gradient(145deg, #0a0a0a 0%, #020202 100%);
-            border: 1px solid rgba(255, 255, 255, 0.03);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .carbon-card::before {
-            content: "";
-            position: absolute;
-            top: 0; left: -100%; width: 100%; height: 2px;
-            background: linear-gradient(90deg, transparent, var(--accent), transparent);
-            transition: 0.5s;
-        }
-
-        .carbon-card:hover::before { left: 100%; }
-
-        .btn-luxury {
-            position: relative;
-            background: #fff;
-            color: #000;
-            font-weight: 900;
-            padding: 1.25rem 2.5rem;
-            border-radius: 4px;
-            transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-            overflow: hidden;
-            display: inline-flex;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+            z-index: 1000;
+            width: 60px;
+            height: 60px;
+            display: flex;
             align-items: center;
-            gap: 12px;
+            justify-content: center;
+            transition: all 0.3s ease;
         }
 
-        .btn-luxury:hover {
-            background: var(--accent);
-            color: #fff;
-            transform: scale(1.05);
-            box-shadow: 0 0 30px var(--accent-glow);
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            background-color: #128c7e;
         }
 
-        /* Custom Scroll */
-        ::-webkit-scrollbar { width: 4px; }
-        ::-webkit-scrollbar-track { background: #000; }
-        ::-webkit-scrollbar-thumb { background: #333; }
-        ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-results {
+            animation: fadeIn 0.4s ease-out forwards;
+        }
 
-        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
-        .reveal.active { opacity: 1; transform: translateY(0); }
+        .loader {
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top: 3px solid #3b82f6;
+            width: 24px;
+            height: 24px;
+            animation: spin 1s linear infinite;
+            display: inline-block;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
     </style>
 </head>
-<body>
+<body class="bg-gray-50 text-gray-900">
 
-    <div id="glow" class="glow-sphere"></div>
+    <!-- Bouton WhatsApp Flottant -->
+    <a href="https://wa.me/33623436777" class="whatsapp-float" target="_blank" title="Contactez-nous sur WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
-    <!-- Navigation -->
-    <nav class="fixed w-full z-[1000] nav-blur">
-        <div class="max-w-[1400px] mx-auto px-8 py-6 flex justify-between items-center">
-            <div class="group cursor-pointer">
-                <span class="font-unbounded text-2xl font-black tracking-tighter uppercase italic">
-                    CARPLAY <span class="text-blue-600 transition-all group-hover:tracking-widest">37</span>
-                </span>
-            </div>
-            
-            <div class="hidden lg:flex items-center gap-12 font-bold text-[11px] uppercase tracking-[0.4em] text-gray-500">
-                <a href="#services" class="hover:text-blue-500 transition">Solutions</a>
-                <a href="#atelier" class="hover:text-blue-500 transition">L'Atelier</a>
-                <a href="#contact" class="hover:text-blue-500 transition">Réservation</a>
-            </div>
-
-            <div class="flex items-center gap-6">
-                <a href="tel:+33623436777" class="text-sm font-black hidden md:block">06 23 43 67 77</a>
-                <div class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white hover:text-black transition cursor-pointer">
-                    <i class="fa-solid fa-bars-staggered"></i>
+    <!-- Header -->
+    <header class="fixed w-full z-50 glass-morphism">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="bg-blue-600 text-white p-2 rounded-lg">
+                    <i class="fa-solid fa-car-side text-xl"></i>
                 </div>
+                <span class="text-2xl font-bold tracking-tighter text-gray-900">CARPLAY <span class="text-blue-600">37</span></span>
+            </div>
+            <nav class="hidden md:flex space-x-6 font-medium text-sm lg:text-base">
+                <a href="#services" class="hover:text-blue-600 transition">Solutions</a>
+                <a href="#installation" class="hover:text-blue-600 transition">Qualité</a>
+                <a href="#reservation" class="hover:text-blue-600 transition">Réserver</a>
+                <a href="#faq" class="hover:text-blue-600 transition">FAQ</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <a href="tel:+33623436777" class="hidden sm:block font-bold text-blue-600 hover:text-blue-700">
+                    <i class="fa-solid fa-phone mr-1"></i> 06 23 43 67 77
+                </a>
+                <a href="#reservation" class="bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition shadow-lg shadow-blue-200 text-sm">
+                    Devis Gratuit
+                </a>
             </div>
         </div>
-    </nav>
+    </header>
 
     <!-- Hero Section -->
-    <section class="min-h-screen flex flex-col justify-center items-center px-8 relative overflow-hidden">
-        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center pointer-events-none">
-            <span class="font-unbounded text-[15vw] font-black text-outline opacity-20 select-none">COCKPIT</span>
-        </div>
-
-        <div class="z-10 text-center">
-            <div class="inline-flex items-center gap-3 px-4 py-2 bg-white/5 border border-white/10 rounded-full mb-10 reveal">
-                <span class="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></span>
-                <span class="text-[10px] font-black uppercase tracking-[0.3em] text-blue-400">Services Mobiles Premium - Indre-et-Loire</span>
-            </div>
-            
-            <h1 class="font-unbounded text-5xl md:text-8xl font-black mb-10 leading-[0.9] tracking-tighter reveal">
-                L'EXPÉRIENCE <br>
-                <span class="italic text-blue-600">CONNECTED.</span>
+    <section class="hero-gradient pt-40 pb-24 px-4 text-white text-center">
+        <div class="max-w-4xl mx-auto">
+            <span class="bg-blue-600/20 text-blue-400 px-4 py-1 rounded-full text-sm font-bold uppercase tracking-widest mb-6 inline-block">
+                Secteur Tours | 9h-18h | 7j/7
+            </span>
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight italic">
+                Modernisez enfin votre véhicule !
             </h1>
-
-            <p class="max-w-2xl text-gray-400 text-lg md:text-xl font-light mb-12 reveal leading-relaxed">
-                Modernisation sans fil. Intégration invisible. Performance OEM. <br>
-                Le standard de demain pour votre véhicule d'exception.
+            <p class="text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
+                Installation d'Apple CarPlay et Android Auto sans fil. Retrouvez Waze, Spotify, messages.. sans quitter la route des yeux.
             </p>
-
-            <div class="flex flex-col md:flex-row gap-6 justify-center items-center reveal">
-                <a href="#contact" class="btn-luxury">
-                    CONFIGURER MON VÉHICULE <i class="fa-solid fa-arrow-right-long text-xs"></i>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#reservation" class="bg-blue-600 px-8 py-4 rounded-xl text-lg font-bold hover:bg-blue-700 transition">
+                    Prendre rendez-vous
                 </a>
-                <span class="text-[10px] font-bold text-gray-600 uppercase tracking-widest border-l border-white/10 pl-6">BMW • AUDI • MERCEDES • PORSCHE</span>
+                <a href="tel:+33623436777" class="bg-white/10 px-8 py-4 rounded-xl text-lg font-bold hover:bg-white/20 transition backdrop-blur-md">
+                    Nous appeler
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Stat Grid -->
-    <section class="py-20 border-y border-white/5 bg-black/50">
-        <div class="max-w-7xl mx-auto px-8 grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
-            <div class="reveal">
-                <div class="text-3xl font-black font-unbounded mb-2">500+</div>
-                <div class="text-[9px] uppercase tracking-[0.3em] text-gray-500 font-bold">Installations</div>
-            </div>
-            <div class="reveal" style="transition-delay: 0.1s;">
-                <div class="text-3xl font-black font-unbounded mb-2">37</div>
-                <div class="text-[9px] uppercase tracking-[0.3em] text-gray-500 font-bold">Rayon d'action</div>
-            </div>
-            <div class="reveal" style="transition-delay: 0.2s;">
-                <div class="text-3xl font-black font-unbounded mb-2">24H</div>
-                <div class="text-[9px] uppercase tracking-[0.3em] text-gray-500 font-bold">Réponse Devis</div>
-            </div>
-            <div class="reveal" style="transition-delay: 0.3s;">
-                <div class="text-3xl font-black font-unbounded mb-2">2ANS</div>
-                <div class="text-[9px] uppercase tracking-[0.3em] text-gray-500 font-bold">Garantie Totale</div>
-            </div>
+    <!-- Solutions Section -->
+    <section id="services" class="py-24 max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4 italic uppercase tracking-tighter">Nos Solutions</h2>
+            <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
         </div>
-    </section>
-
-    <!-- Services -->
-    <section id="services" class="py-40 px-8">
-        <div class="max-w-7xl mx-auto">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 card-hover flex flex-col justify-between">
                 <div>
-                    <h2 class="font-unbounded text-4xl md:text-6xl font-black uppercase italic mb-4 reveal">SOLUTIONS<br><span class="text-blue-600">HARDWARE.</span></h2>
-                    <p class="text-gray-500 tracking-widest text-[10px] uppercase font-bold reveal">Technologie sans compromis</p>
+                    <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mb-6 text-2xl">
+                        <i class="fa-solid fa-box-open"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Module Invisible</h3>
+                    <p class="text-gray-600 mb-6 italic text-sm">Conservez votre écran d'origine. Boîtier caché compatible BMW, Audi, Mercedes, etc.</p>
                 </div>
-                <div class="hidden md:block w-32 h-[1px] bg-white/20 mb-6"></div>
+                <div class="text-3xl font-extrabold text-blue-600">299€ <span class="text-sm font-normal text-gray-400 italic">posé</span></div>
             </div>
 
-            <div class="grid lg:grid-cols-3 gap-8">
-                <!-- Module MMI -->
-                <div class="carbon-card p-12 rounded-[2rem] flex flex-col justify-between min-h-[500px] reveal">
-                    <div>
-                        <div class="w-14 h-14 bg-blue-600/10 border border-blue-500/30 rounded-2xl flex items-center justify-center text-blue-500 text-2xl mb-10">
-                            <i class="fa-solid fa-microchip"></i>
-                        </div>
-                        <h3 class="text-3xl font-bold mb-6 italic uppercase">Module <br>Invisible</h3>
-                        <p class="text-gray-500 font-light leading-relaxed">Intégration transparente derrière l'autoradio d'origine. Conservez 100% des menus constructeur tout en ajoutant le CarPlay sans fil.</p>
+            <div class="bg-white p-8 rounded-3xl shadow-xl border-2 border-blue-600 card-hover relative flex flex-col justify-between">
+                <span class="absolute top-0 right-8 transform -translate-y-1/2 bg-blue-600 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Populaire</span>
+                <div>
+                    <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mb-6 text-2xl">
+                        <i class="fa-solid fa-desktop"></i>
                     </div>
-                    <div class="mt-12 pt-8 border-t border-white/5 flex justify-between items-center">
-                        <span class="text-3xl font-black">299€ <span class="text-[10px] text-gray-600 align-middle">POSE INCLUSE</span></span>
-                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Écran Tactile HD</h3>
+                    <p class="text-gray-600 mb-6 italic text-sm">Remplacement complet pour une expérience moderne. Tablette haute définition.</p>
                 </div>
+                <div class="text-3xl font-extrabold text-blue-600">249€ <span class="text-sm font-normal text-gray-400 italic">posé</span></div>
+            </div>
 
-                <!-- Écran Android -->
-                <div class="carbon-card p-12 rounded-[2rem] flex flex-col justify-between min-h-[500px] border-blue-600/50 reveal" style="transition-delay: 0.1s;">
-                    <div class="absolute top-6 right-8 bg-blue-600 text-white text-[8px] font-black px-3 py-1 rounded-full uppercase tracking-widest">Le plus populaire</div>
-                    <div>
-                        <div class="w-14 h-14 bg-white text-black rounded-2xl flex items-center justify-center text-2xl mb-10 shadow-[0_0_20px_rgba(255,255,255,0.2)]">
-                            <i class="fa-solid fa-display"></i>
-                        </div>
-                        <h3 class="text-3xl font-bold mb-6 italic uppercase text-white">Écran <br>Tactile HD</h3>
-                        <p class="text-gray-500 font-light leading-relaxed">Upgrade complet vers une dalle IPS haute définition. Fluidité maximale et interface moderne type Tesla/MBUX.</p>
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 card-hover flex flex-col justify-between">
+                <div>
+                    <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mb-6 text-2xl">
+                        <i class="fa-solid fa-code"></i>
                     </div>
-                    <div class="mt-12 pt-8 border-t border-white/5 flex justify-between items-center">
-                        <span class="text-3xl font-black">249€ <span class="text-[10px] text-gray-600 align-middle">POSE INCLUSE</span></span>
-                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Activation Logicielle</h3>
+                    <p class="text-gray-600 mb-6 italic text-sm">Déblocage des options CarPlay constructeur via la prise diagnostic OBD.</p>
                 </div>
-
-                <!-- Activation -->
-                <div class="carbon-card p-12 rounded-[2rem] flex flex-col justify-between min-h-[500px] reveal" style="transition-delay: 0.2s;">
-                    <div>
-                        <div class="w-14 h-14 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center text-white text-2xl mb-10">
-                            <i class="fa-solid fa-key"></i>
-                        </div>
-                        <h3 class="text-3xl font-bold mb-6 italic uppercase">Full <br>Activation</h3>
-                        <p class="text-gray-500 font-light leading-relaxed">Déblocage via valise diagnostic pour les systèmes compatibles. Rapide, propre, 100% natif.</p>
-                    </div>
-                    <div class="mt-12 pt-8 border-t border-white/5 flex justify-between items-center">
-                        <span class="text-3xl font-black">149€ <span class="text-[10px] text-gray-600 align-middle">FORFAIT FIXE</span></span>
-                    </div>
-                </div>
+                <div class="text-3xl font-extrabold text-blue-600">149€ <span class="text-sm font-normal text-gray-400 italic">forfait</span></div>
             </div>
         </div>
     </section>
 
-    <!-- Reservation UX -->
-    <section id="contact" class="py-40 px-8 bg-white text-black">
-        <div class="max-w-5xl mx-auto">
-            <div class="grid lg:grid-cols-2 gap-20">
-                <div class="reveal">
-                    <h2 class="font-unbounded text-5xl md:text-7xl font-black uppercase italic leading-none mb-10">PRÊT POUR <br>L'UPGRADE ?</h2>
-                    <p class="text-gray-600 text-lg mb-12">Remplissez le manifeste de bord. Notre expert valide votre configuration sous 2 heures par WhatsApp.</p>
-                    
-                    <div class="space-y-8">
-                        <div class="flex items-center gap-6">
-                            <div class="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center"><i class="fa-solid fa-phone"></i></div>
-                            <span class="font-black text-xl tracking-tighter">06 23 43 67 77</span>
+    <!-- Reservation Section (MODIFIÉE POUR WHATSAPP) -->
+    <section id="reservation" class="py-20 bg-blue-600">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row">
+                <div class="md:w-1/3 bg-gray-900 text-white p-10 flex flex-col justify-between">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-6 italic uppercase tracking-tighter">Demande de Devis</h2>
+                        <p class="text-gray-400 mb-6 text-sm">Remplissez les détails de votre véhicule pour recevoir une confirmation de faisabilité sur WhatsApp.</p>
+                        <div class="bg-blue-600/20 border border-blue-600/50 p-4 rounded-xl text-[10px] italic text-blue-300">
+                            <i class="fa-solid fa-circle-info mr-2"></i> L'envoi ouvrira votre application WhatsApp avec un message pré-rempli.
                         </div>
-                        <div class="flex items-center gap-6">
-                            <div class="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center"><i class="fa-solid fa-location-arrow"></i></div>
-                            <span class="font-black text-xl tracking-tighter uppercase italic">Secteur TOURS & 37</span>
+                    </div>
+                    <div class="space-y-4 mt-8">
+                        <div class="flex items-center space-x-3">
+                            <i class="fa-solid fa-phone text-blue-500"></i>
+                            <a href="tel:+33623436777" class="hover:text-blue-500 transition text-sm">06 23 43 67 77</a>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fa-brands fa-whatsapp text-green-500"></i>
+                            <span class="text-sm">Assistance 7j/7</span>
                         </div>
                     </div>
                 </div>
+                <div class="md:w-2/3 p-10">
+                    <form id="quoteForm" class="space-y-4">
+                        <div class="grid grid-cols-2 gap-4">
+                            <input type="text" id="carBrand" placeholder="Marque (ex: BMW)" class="w-full bg-gray-50 border border-gray-200 p-3 rounded-xl focus:outline-blue-600 text-sm" required>
+                            <input type="number" id="carYear" placeholder="Année (ex: 2016)" class="w-full bg-gray-50 border border-gray-200 p-3 rounded-xl focus:outline-blue-600 text-sm" required>
+                        </div>
+                        <input type="text" id="carModel" placeholder="Modèle précis (ex: Série 1 F20, Golf 7...)" class="w-full bg-gray-50 border border-gray-200 p-3 rounded-xl focus:outline-blue-600 text-sm" required>
+                        <select id="serviceType" class="w-full bg-gray-50 border border-gray-200 p-3 rounded-xl focus:outline-blue-600 text-sm" required>
+                            <option value="" disabled selected>Prestation souhaitée</option>
+                            <option value="Module CarPlay (écran origine)">Module CarPlay (écran origine)</option>
+                            <option value="Changement d'écran (Android)">Changement d'écran (Android)</option>
+                            <option value="Activation logicielle">Activation logicielle</option>
+                        </select>
+                        <input type="text" id="userCity" placeholder="Votre Ville" class="w-full bg-gray-50 border border-gray-200 p-3 rounded-xl focus:outline-blue-600 text-sm" required>
+                        
+                        <div class="flex items-start space-x-2 py-2">
+                            <input type="checkbox" id="cgv" class="mt-1 w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500" required>
+                            <label for="cgv" class="text-[10px] text-gray-500 leading-tight">
+                                J'accepte les <a href="cgv.html" class="text-blue-600 underline">CGV</a> et je souhaite envoyer ma demande par WhatsApp.
+                            </label>
+                        </div>
 
-                <div class="reveal" style="transition-delay: 0.2s;">
-                    <form id="carplayForm" class="space-y-6">
-                        <div class="group border-b-2 border-black/10 py-4 focus-within:border-blue-600 transition">
-                            <label class="text-[9px] font-black uppercase tracking-[0.3em] text-gray-400">Marque & Modèle</label>
-                            <input type="text" id="carModel" placeholder="Ex: BMW Série 3 F30" class="w-full bg-transparent border-none outline-none font-bold text-xl py-2 uppercase">
-                        </div>
-                        <div class="group border-b-2 border-black/10 py-4 focus-within:border-blue-600 transition">
-                            <label class="text-[9px] font-black uppercase tracking-[0.3em] text-gray-400">Année de mise en circulation</label>
-                            <input type="number" id="carYear" placeholder="2017" class="w-full bg-transparent border-none outline-none font-bold text-xl py-2">
-                        </div>
-                        <div class="group border-b-2 border-black/10 py-4 focus-within:border-blue-600 transition">
-                            <label class="text-[9px] font-black uppercase tracking-[0.3em] text-gray-400">Votre Ville (37)</label>
-                            <input type="text" id="userCity" placeholder="Ex: Joué-lès-Tours" class="w-full bg-transparent border-none outline-none font-bold text-xl py-2 uppercase">
-                        </div>
-
-                        <button type="button" onclick="sendWhatsApp()" class="w-full bg-black text-white py-6 font-black uppercase tracking-widest text-xs flex items-center justify-center gap-4 hover:bg-blue-600 transition shadow-2xl">
-                            ENVOYER AU COCKPIT <i class="fa-brands fa-whatsapp text-xl"></i>
+                        <button type="button" onclick="sendToWhatsApp()" class="w-full bg-green-500 text-white py-4 rounded-xl font-bold text-lg hover:bg-green-600 transition mt-2 flex items-center justify-center">
+                            <i class="fa-brands fa-whatsapp mr-2 text-xl"></i> Envoyer ma demande
                         </button>
                     </form>
                 </div>
@@ -321,64 +235,61 @@
         </div>
     </section>
 
-    <!-- Giant Footer Branding -->
-    <footer class="pt-40 pb-20 px-8">
-        <div class="max-w-7xl mx-auto border-t border-white/5 pt-20">
-            <div class="flex flex-col md:flex-row justify-between items-center gap-12 text-center md:text-left">
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16 px-4 border-t border-white/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-12 mb-12 text-center md:text-left">
                 <div>
-                    <span class="font-unbounded text-2xl font-black mb-4 block">CARPLAY 37</span>
-                    <p class="text-gray-600 text-[10px] uppercase tracking-[0.5em]">Tours • Indre-et-Loire • France</p>
+                    <div class="flex items-center space-x-2 mb-6 justify-center md:justify-start">
+                        <div class="bg-blue-600 text-white p-2 rounded-lg"><i class="fa-solid fa-car-side"></i></div>
+                        <span class="text-xl font-bold tracking-tighter uppercase italic">CARPLAY <span class="text-blue-600">37</span></span>
+                    </div>
+                    <p class="text-gray-500 text-sm">Expert en modernisation multimédia automobile. Tours & France entière.</p>
                 </div>
-                <div class="flex gap-10 font-bold text-[10px] uppercase tracking-widest text-gray-500">
-                    <a href="cgv.html" class="hover:text-white">Légal</a>
-                    <a href="#" class="hover:text-white">Instagram</a>
-                    <a href="#" class="hover:text-white">TikTok</a>
+                <div>
+                    <h4 class="font-bold mb-6 uppercase text-xs tracking-widest text-gray-400 italic">Contact</h4>
+                    <ul class="text-gray-500 text-sm space-y-4">
+                        <li><i class="fa-solid fa-phone text-blue-600 mr-2"></i> 06 23 43 67 77</li>
+                        <li><i class="fa-solid fa-location-dot text-blue-600 mr-2"></i> Secteur Tours, 37</li>
+                    </ul>
                 </div>
-                <div class="text-[9px] text-gray-800 font-bold tracking-widest uppercase">SIRET 97805854300015</div>
+                <div>
+                    <h4 class="font-bold mb-6 uppercase text-xs tracking-widest text-gray-400 italic">Juridique</h4>
+                    <ul class="text-gray-500 text-sm space-y-4">
+                        <li><a href="cgv.html" class="hover:text-blue-600 transition underline-offset-4 underline decoration-gray-800">CGV & Mentions Légales</a></li>
+                    </ul>
+                </div>
             </div>
-
-            <div class="mt-40 pointer-events-none select-none">
-                <h2 class="font-unbounded text-[15vw] leading-none text-white/5 font-black uppercase">PERFORMANCE</h2>
+            <div class="border-t border-white/5 pt-8 text-center text-[10px] text-gray-700 uppercase tracking-[0.2em]">
+                &copy; 2026 CARPLAY 37 | ROUANI BOURAS
             </div>
         </div>
     </footer>
 
     <script>
-        // Glow effect
-        const glow = document.getElementById('glow');
-        document.addEventListener('mousemove', (e) => {
-            glow.style.left = e.clientX + 'px';
-            glow.style.top = e.clientY + 'px';
-        });
-
-        // Reveal effect on scroll
-        const reveals = document.querySelectorAll('.reveal');
-        const observerOptions = { threshold: 0.1 };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                }
-            });
-        }, observerOptions);
-
-        reveals.forEach(reveal => observer.observe(reveal));
-
-        // WhatsApp Sender
-        function sendWhatsApp() {
-            const car = document.getElementById('carModel').value;
+        // Fonction WhatsApp
+        function sendToWhatsApp() {
+            const brand = document.getElementById('carBrand').value;
             const year = document.getElementById('carYear').value;
+            const model = document.getElementById('carModel').value;
+            const service = document.getElementById('serviceType').value;
             const city = document.getElementById('userCity').value;
+            const cgv = document.getElementById('cgv').checked;
 
-            if(!car || !city) {
-                alert("Données cockpit incomplètes.");
+            if(!brand || !year || !model || !service || !city) {
+                alert("Veuillez remplir tous les champs du formulaire.");
+                return;
+            }
+            if(!cgv) {
+                alert("Veuillez accepter les CGV.");
                 return;
             }
 
-            const msg = `DEMANDE D'INSTALLATION - CARPLAY 37\n\nVéhicule: ${car}\nAnnée: ${year}\nLocalisation: ${city}`;
-            const url = `https://wa.me/33623436777?text=${encodeURIComponent(msg)}`;
-            window.open(url, '_blank');
+            const phone = "33623436777";
+            const message = `Bonjour CARPLAY 37 ! 👋\n\nJe souhaite un devis pour mon véhicule :\n🚗 Marque : ${brand}\n📅 Année : ${year}\n🛠 Modèle : ${model}\n✨ Prestation : ${service}\n📍 Ville : ${city}\n\nMerci d'avance !`;
+            
+            const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
         }
     </script>
 
